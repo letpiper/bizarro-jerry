@@ -1,0 +1,23 @@
+{
+  "name": "bizarro-jerry",
+  "version": "1.0.0",
+  "description": "Bizarro Jerry: Piper Test Harness - Named after the Seinfeld episode",
+  "private": true,
+  "scripts": {
+    "dev": "cd ui && npm run dev",
+    "build": "cd ui && npm run build",
+    "start": "cd ui && npm run start",
+    "test": "node ada-core-5-scenarios.js",
+    "test:full": "npm test && npm run build && npm run start"
+  },
+  "keywords": [
+    "piper",
+    "test-harness",
+    "bizarro",
+    "seinfeld",
+    "ada",
+    "simulated-world"
+  ],
+  "author": "Ada",
+  "license": "PRIVATE"
+}

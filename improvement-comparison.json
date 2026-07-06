@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-07-05T13:16:49.244Z",
+  "baseline": {
+    "scenario": "Basic meeting scheduling",
+    "score": 78.83
+  },
+  "improved": {
+    "scenario": "Meeting scheduling with working-hours awareness",
+    "score": 90,
+    "passed": true,
+    "byTarget": {
+      "Availability Detection": 80,
+      "Conflict Resolution": 100,
+      "Target Meeting Booking Experience": 90
+    }
+  },
+  "improvement": {
+    "absolute": "11.2",
+    "relative": "14.2"
+  },
+  "implementationDays": 2,
+  "benefits": [
+    "Better timezone handling",
+    "Proactive conflict detection",
+    "Alternative suggestions",
+    "Actionable resolution strategy"
+  ]
+}

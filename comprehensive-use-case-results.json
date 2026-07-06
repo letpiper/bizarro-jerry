@@ -1,0 +1,352 @@
+{
+  "timestamp": "2026-07-05T16:31:26.304Z",
+  "testSuite": "Comprehensive Piper Use Case Testing",
+  "summary": {
+    "totalUseCases": 5,
+    "totalScenarios": 15,
+    "passedUseCases": 0,
+    "portfolioAverage": 15,
+    "useCaseResults": [
+      {
+        "id": "email-management",
+        "name": "Email Management",
+        "score": 31,
+        "passed": false,
+        "scenarios": 3
+      },
+      {
+        "id": "slack-context",
+        "name": "Slack Context & Responsiveness",
+        "score": 18,
+        "passed": false,
+        "scenarios": 3
+      },
+      {
+        "id": "task-management",
+        "name": "Task & Project Management",
+        "score": 10,
+        "passed": false,
+        "scenarios": 3
+      },
+      {
+        "id": "document-creation",
+        "name": "Document Creation & Collaboration",
+        "score": 9,
+        "passed": false,
+        "scenarios": 3
+      },
+      {
+        "id": "data-synthesis",
+        "name": "Data Synthesis & Reporting",
+        "score": 8,
+        "passed": false,
+        "scenarios": 3
+      }
+    ]
+  },
+  "detailed": [
+    {
+      "id": "email-management",
+      "name": "Email Management",
+      "scenarioCount": 3,
+      "scenarios": [
+        {
+          "id": "email-draft-professional",
+          "name": "Draft Professional Email",
+          "context": "Need to respond to client with project update",
+          "challenges": [
+            "Knows what to write without searching history",
+            "Maintains tone consistency",
+            "Links to relevant documents/tasks"
+          ],
+          "score": 38,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "email-organize-inbox",
+          "name": "Organize Overflowing Inbox",
+          "context": "User has 300 unread emails, needs triage",
+          "challenges": [
+            "Distinguish important vs noise",
+            "Understand domain-specific urgency",
+            "Batch operations at scale"
+          ],
+          "score": 23,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "email-summarize-thread",
+          "name": "Summarize Long Email Thread",
+          "context": "15-email thread about Q3 planning, user needs summary",
+          "challenges": [
+            "Thread context and nuance",
+            "Distinguishing signal from noise",
+            "Identifying implicit action items"
+          ],
+          "score": 33,
+          "verdict": "FAIL"
+        }
+      ],
+      "averageScore": 31,
+      "passed": false
+    },
+    {
+      "id": "slack-context",
+      "name": "Slack Context & Responsiveness",
+      "scenarioCount": 3,
+      "scenarios": [
+        {
+          "id": "slack-respond-to-question",
+          "name": "Respond to Slack Question",
+          "context": "Engineering asks in #general: \"Does anyone know the current API quota limits?\"",
+          "challenges": [
+            "Find correct info across scattered docs",
+            "Know when to ask human expert",
+            "Provide comprehensive vs concise answer",
+            "Context about what person actually needs"
+          ],
+          "score": 15,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "slack-summarize-channel",
+          "name": "Summarize Channel While Away",
+          "context": "User was away for 2 days, returns to find 200 messages in #product",
+          "challenges": [
+            "Understand implicit context",
+            "Identify tone and emotion",
+            "Know what matters to this specific person",
+            "Handle sarcasm and inside jokes"
+          ],
+          "score": 25,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "slack-surface-action-items",
+          "name": "Surface Action Items from Conversation",
+          "context": "Thread in #launch about Q3 release strategy with 30 messages",
+          "challenges": [
+            "Parse casual language for commitments",
+            "Distinguish decided vs debated",
+            "Understand organizational priorities",
+            "Handle cross-functional complexity"
+          ],
+          "score": 15,
+          "verdict": "FAIL"
+        }
+      ],
+      "averageScore": 18,
+      "passed": false
+    },
+    {
+      "id": "task-management",
+      "name": "Task & Project Management",
+      "scenarioCount": 3,
+      "scenarios": [
+        {
+          "id": "task-create-from-email",
+          "name": "Create Task from Email",
+          "context": "Email from manager: \"Can you review the new API docs and send feedback?\"",
+          "challenges": [
+            "Extract actionable items from prose",
+            "Infer urgency from context",
+            "Link related work automatically",
+            "Handle recursive subtasks"
+          ],
+          "score": 15,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "task-prioritize-portfolio",
+          "name": "Prioritize Task Portfolio",
+          "context": "User has 47 open tasks, needs to prioritize Q3 roadmap",
+          "challenges": [
+            "Understand business strategy",
+            "Identify hidden dependencies",
+            "Estimate actual effort vs estimate",
+            "Handle stakeholder conflicts"
+          ],
+          "score": 15,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "task-sync-multiple-tools",
+          "name": "Sync Tasks Across Tools",
+          "context": "Tasks split across Todoist, Linear, and GitHub issues",
+          "challenges": [
+            "Deduplicate across tools",
+            "Maintain bidirectional sync",
+            "Handle tool-specific metadata",
+            "Prevent infinite loops"
+          ],
+          "score": 0,
+          "verdict": "FAIL"
+        }
+      ],
+      "averageScore": 10,
+      "passed": false
+    },
+    {
+      "id": "document-creation",
+      "name": "Document Creation & Collaboration",
+      "scenarioCount": 3,
+      "scenarios": [
+        {
+          "id": "doc-write-status-report",
+          "name": "Write Weekly Status Report",
+          "context": "Compile updates from calendar, tasks, chat, emails into status doc",
+          "challenges": [
+            "Aggregate data from 5+ sources",
+            "Write naturally (not robot-like)",
+            "Know what's important to highlight",
+            "Maintain consistency with past reports"
+          ],
+          "score": 15,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "doc-format-technical-spec",
+          "name": "Format & Polish Technical Spec",
+          "context": "Rough notes about API design need to become formal spec",
+          "challenges": [
+            "Understand technical concepts",
+            "Know formatting standards",
+            "Suggest appropriate examples",
+            "Identify gaps in spec"
+          ],
+          "score": 12,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "doc-collaborate-with-team",
+          "name": "Collaborate on Document with Team",
+          "context": "Design doc needs input from 5 people, consolidate feedback",
+          "challenges": [
+            "Understand multiple perspectives",
+            "Mediate conflicting opinions",
+            "Know what needs consensus",
+            "Track decision history"
+          ],
+          "score": 0,
+          "verdict": "FAIL"
+        }
+      ],
+      "averageScore": 9,
+      "passed": false
+    },
+    {
+      "id": "data-synthesis",
+      "name": "Data Synthesis & Reporting",
+      "scenarioCount": 3,
+      "scenarios": [
+        {
+          "id": "report-weekly-metrics",
+          "name": "Compile Weekly Metrics Report",
+          "context": "Gather metrics from Slack (engagement), GitHub (PRs), Linear (velocity), Calendar (time)",
+          "challenges": [
+            "Connect dots across systems",
+            "Handle missing/conflicting data",
+            "Understand what metrics mean",
+            "Know acceptable ranges"
+          ],
+          "score": 12,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "report-team-health",
+          "name": "Team Health & Capacity Analysis",
+          "context": "Understand team utilization: workload, time off, satisfaction, pace",
+          "challenges": [
+            "Detect burnout signals",
+            "Understand implicit workload",
+            "Know sustainable pace",
+            "Handle sensitive information carefully"
+          ],
+          "score": 0,
+          "verdict": "FAIL"
+        },
+        {
+          "id": "report-quarterly-planning",
+          "name": "Quarterly Planning Analysis",
+          "context": "Prepare data for Q3 planning: capacity, velocity, customer feedback, roadmap priorities",
+          "challenges": [
+            "Synthesize many data sources",
+            "Understand business strategy",
+            "Handle uncertainty well",
+            "Make reasonable projections"
+          ],
+          "score": 12,
+          "verdict": "FAIL"
+        }
+      ],
+      "averageScore": 8,
+      "passed": false
+    }
+  ],
+  "patterns": {
+    "strengths": [
+      "Single-tool operations",
+      "Text generation",
+      "Question answering",
+      "Document creation"
+    ],
+    "weaknesses": [
+      "Cross-tool sync",
+      "Understanding nuance",
+      "Complex prioritization",
+      "Collaboration",
+      "Behavioral signals",
+      "Domain knowledge"
+    ]
+  },
+  "roadmap": [
+    {
+      "priority": 1,
+      "useCase": "Meeting Scheduling",
+      "effort": "High (8 weeks)",
+      "impact": "Critical - daily user need",
+      "current": "35%",
+      "target": "85%"
+    },
+    {
+      "priority": 2,
+      "useCase": "Email Management",
+      "effort": "Medium (4 weeks)",
+      "impact": "High - handles daily communication",
+      "current": "31%",
+      "target": "75%"
+    },
+    {
+      "priority": 3,
+      "useCase": "Task Management",
+      "effort": "High (6 weeks)",
+      "impact": "High - core to productivity",
+      "current": "18%",
+      "target": "80%"
+    },
+    {
+      "priority": 4,
+      "useCase": "Slack Context",
+      "effort": "Medium (4 weeks)",
+      "impact": "Medium - async communication",
+      "current": "10%",
+      "target": "70%"
+    },
+    {
+      "priority": 5,
+      "useCase": "Document Creation",
+      "effort": "Low (2 weeks)",
+      "impact": "Medium - needed for leadership",
+      "current": "9%",
+      "target": "75%"
+    },
+    {
+      "priority": 6,
+      "useCase": "Data Synthesis",
+      "effort": "High (6 weeks)",
+      "impact": "Medium - strategic planning",
+      "current": "8%",
+      "target": "70%"
+    }
+  ]
+}

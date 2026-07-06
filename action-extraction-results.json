@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-07-05T16:33:11.810Z",
+  "testSuite": "Piper Action Extraction & Execution",
+  "summary": {
+    "scenarios": [
+      {
+        "id": "extract-meeting-notes",
+        "name": "Extract Actions from Meeting Notes",
+        "score": 75,
+        "passed": true
+      },
+      {
+        "id": "execute-actions-daily",
+        "name": "Execute Actions Throughout the Day",
+        "score": 75,
+        "passed": true
+      },
+      {
+        "id": "handle-meeting-with-actions",
+        "name": "Extract & Immediate Execute: Real Meeting Scenario",
+        "score": 75,
+        "passed": true
+      },
+      {
+        "id": "extract-from-recording",
+        "name": "Extract Actions from Meeting Recording/Transcript",
+        "score": 75,
+        "passed": true
+      },
+      {
+        "id": "prevent-action-loss",
+        "name": "Prevent Action Items from Being Lost",
+        "score": 65,
+        "passed": false
+      }
+    ],
+    "passed": 4,
+    "portfolioAverage": 73
+  },
+  "findings": [
+    {
+      "area": "Explicit Extraction",
+      "score": "75%",
+      "verdict": "ACCEPTABLE",
+      "issue": "Works for clear action items"
+    },
+    {
+      "area": "Implicit Extraction",
+      "score": "30%",
+      "verdict": "CRITICAL",
+      "issue": "Misses implied actions, doesn't clarify"
+    },
+    {
+      "area": "Real-Time Execution",
+      "score": "40%",
+      "verdict": "CRITICAL",
+      "issue": "Can't surface actions at right time or prioritize"
+    },
+    {
+      "area": "Dependency Tracking",
+      "score": "35%",
+      "verdict": "CRITICAL",
+      "issue": "Doesn't see cross-task dependencies"
+    },
+    {
+      "area": "Coordination",
+      "score": "28%",
+      "verdict": "CRITICAL",
+      "issue": "Can't coordinate across multiple people"
+    }
+  ]
+}

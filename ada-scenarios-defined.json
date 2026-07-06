@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-07-05T23:51:57.053Z",
+  "scenarios": [
+    {
+      "name": "Scenario 1: Daily Decision Batch",
+      "status": "defined"
+    },
+    {
+      "name": "Scenario 2: All-Hands Coordination (Impossible)",
+      "status": "defined"
+    },
+    {
+      "name": "Scenario 3: American Airlines Deal Readiness",
+      "status": "defined"
+    },
+    {
+      "name": "Scenario 4: PAL POC Customer Coordination",
+      "status": "defined"
+    },
+    {
+      "name": "Scenario 5: Infrastructure Priority Negotiation",
+      "status": "defined"
+    },
+    {
+      "name": "Scenario 6: Group Scheduling with Real Constraints",
+      "status": "defined"
+    }
+  ]
+}

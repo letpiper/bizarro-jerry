@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-07-06T01:14:41.458Z",
+  "scenarios": [
+    {
+      "name": "Scenario 1: Mike Daily Decision Batch",
+      "persona": "Mike (CEO)",
+      "status": "defined"
+    },
+    {
+      "name": "Scenario 2: Judy Calendar Coordination",
+      "persona": "Judy (Executive Assistant)",
+      "status": "defined"
+    },
+    {
+      "name": "Scenario 3: Jason Customer Call Workflow",
+      "persona": "Jason (Account Executive)",
+      "status": "defined"
+    },
+    {
+      "name": "Scenario 4: Goz Product Planning",
+      "persona": "Goz (CPTO)",
+      "status": "defined"
+    },
+    {
+      "name": "Scenario 5: Long Board Preparation",
+      "persona": "Long (CFO)",
+      "status": "defined"
+    }
+  ]
+}

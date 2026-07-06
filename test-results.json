@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-07-05T13:16:42.553Z",
+  "scenario": "Meeting Scheduling (3 Timezones)",
+  "execution": {
+    "duration": 1,
+    "success": true
+  },
+  "evaluation": {
+    "overall": 78.83333333333333,
+    "passed": true,
+    "byTarget": {
+      "Availability Detection": 75,
+      "Meeting Creation": 100,
+      "Target Meeting Booking Experience": 61.5
+    }
+  },
+  "metrics": {
+    "mutationsCreated": 2,
+    "calendarEventsCreated": 3,
+    "attendees": 3,
+    "timezones": 3
+  },
+  "gaps": [
+    {
+      "priority": "HIGH",
+      "issue": "Timezone conflict warning",
+      "piperGap": "Need to implement working-hours-aware scheduling"
+    },
+    {
+      "priority": "HIGH",
+      "issue": "No alternative time suggestions",
+      "piperGap": "Implement algorithm to find optimal timezone-aware time slots"
+    },
+    {
+      "priority": "MEDIUM",
+      "issue": "Calendar recursion not handled",
+      "piperGap": "Expand conflict detection to handle recurring events"
+    },
+    {
+      "priority": "MEDIUM",
+      "issue": "No buffer time between meetings",
+      "piperGap": "Add configurable buffer time (default 15 min) between meetings"
+    },
+    {
+      "priority": "LOW",
+      "issue": "No preference weighting",
+      "piperGap": "Add attendee weight/priority to scheduling algorithm"
+    }
+  ],
+  "meeting": {
+    "created": true,
+    "startTime": "2026-07-10T17:00:00.000Z",
+    "attendees": [
+      "Alice Chen",
+      "Bob Smith",
+      "Charlie Wong"
+    ],
+    "conflictsDetected": 0
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "timestamp": "2026-07-05T13:45:50.026Z",
+  "test": "Piper Meeting Scheduling Capability via SimulatedWorld",
+  "scenario": "Cross-timezone meeting (3 attendees, 3 timezones, conflicts present)",
+  "attendees": [
+    "Alice",
+    "Bob",
+    "Charlie"
+  ],
+  "calendar_conflicts": [
+    {
+      "user": "Alice",
+      "event": "Team Standup",
+      "time": "9-10 AM ET"
+    },
+    {
+      "user": "Bob",
+      "event": "Client Meeting",
+      "time": "4-5 PM PT"
+    },
+    {
+      "user": "Charlie",
+      "event": "Design Review",
+      "time": "2-3 PM UK"
+    }
+  ],
+  "piper_result": {
+    "proposed_time": "Thursday 2026-07-10 at 1 PM ET (10 AM PT / 6 PM UK)",
+    "created": true,
+    "attendees": 3
+  },
+  "gaps": [
+    {
+      "issue": "Charlie scheduled at 6 PM UK time",
+      "problem": "OUTSIDE his 9-5 working hours",
+      "severity": "CRITICAL"
+    },
+    {
+      "issue": "No working-hours awareness",
+      "problem": "System did not check if time respects working hours",
+      "severity": "CRITICAL"
+    },
+    {
+      "issue": "No alternatives offered",
+      "problem": "User is stuck with this time or manual rescheduling",
+      "severity": "HIGH"
+    },
+    {
+      "issue": "No timezone impact analysis",
+      "problem": "System did not analyze or warn about TZ boundaries",
+      "severity": "HIGH"
+    },
+    {
+      "issue": "No communication strategy",
+      "problem": "Charlie gets invite at 6 PM with no explanation",
+      "severity": "MEDIUM"
+    }
+  ],
+  "scoring": {
+    "Availability Detection": {
+      "score": 50,
+      "reason": "Found available slot but missed working hours impact"
+    },
+    "Timezone Handling": {
+      "score": 25,
+      "reason": "Booked time without timezone-aware working hours check"
+    },
+    "Conflict Detection": {
+      "score": 100,
+      "reason": "No overlapping hard conflicts detected (1 false negative)"
+    },
+    "Working Hours Respect": {
+      "score": 0,
+      "reason": "Charlie booked at 6 PM - completely violates his hours"
+    },
+    "Communication": {
+      "score": 0,
+      "reason": "No strategy or heads-up about impact"
+    },
+    "Alternative Suggestions": {
+      "score": 0,
+      "reason": "No alternatives provided"
+    }
+  },
+  "overall_score": 29.166666666666668,
+  "passed": false,
+  "recommendations": [
+    {
+      "priority": 1,
+      "title": "Implement working-hours-aware scheduling",
+      "description": "Check attendee working hours for proposed times",
+      "effort": "Medium",
+      "impact": "Eliminates out-of-hours bookings"
+    },
+    {
+      "priority": 2,
+      "title": "Add timezone conflict detection",
+      "description": "Warn when meeting times impact working hours across TZs",
+      "effort": "Medium",
+      "impact": "Enables informed decision-making"
+    },
+    {
+      "priority": 3,
+      "title": "Provide alternative suggestions",
+      "description": "Generate 3-5 alternative times that minimize TZ impact",
+      "effort": "High",
+      "impact": "User has options instead of forcing one time"
+    },
+    {
+      "priority": 4,
+      "title": "Add communication strategy",
+      "description": "Explain impact to attendees, offer async option",
+      "effort": "Medium",
+      "impact": "Better UX for edge cases"
+    }
+  ]
+}
