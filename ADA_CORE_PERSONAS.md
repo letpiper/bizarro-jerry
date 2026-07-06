@@ -16,6 +16,10 @@
 **Tools:** Calendar, Slack, Gmail, Linear, GitHub, Granola  
 **Reports to:** Board
 
+**Goals:**
+- **Organizational:** Close American Airlines deal by 2026-07-25; Launch Piper v2 to 10 enterprises by EOY; Hit $10M ARR by Q4 2026
+- **Personal:** Protect 5:30 PM hard stop for family; Make time for hands-on coding 2x/week; Be the final decision-maker (not a bottleneck)
+
 **Daily Pattern:**
 - 5-6 meetings (customer calls, investor updates, strategy, team sync)
 - Decision-maker on all major items (AA deal, product direction, hires, budget)
@@ -47,10 +51,14 @@
 
 ### 2. Goz (CPTO - Chief Product & Technology Officer)
 **Full Title:** Chief Product & Technology Officer  
-**Timezone:** TBD (likely US, probably ET or PT)  
+**Timezone:** America/New_York (ET)  
 **Working Hours:** 9 AM - 5 PM (standard)  
-**Tools:** Calendar, Slack, Linear, GitHub, Docs, Figma (inference)  
+**Tools:** Calendar, Slack, Linear, GitHub, Docs, Figma  
 **Reports to:** Mike
+
+**Goals:**
+- **Organizational:** Ship Piper meeting scheduling by 2026-08-01; Reduce LLM token cost by 30% by Q3; Build agentic workflow foundation for v3
+- **Personal:** Build a world-class product team; Make trade-off decisions clearly (no waffling); Unblock engineering on roadmap clarity
 
 **Daily Pattern:**
 - Product strategy + roadmap decisions
@@ -87,10 +95,14 @@
 
 ### 3. Jason (Account Executive / Salesperson)
 **Full Title:** Account Executive (Sales)  
-**Timezone:** TBD (likely PT for customer coverage)  
+**Timezone:** America/Los_Angeles (PT)  
 **Working Hours:** 9 AM - 5 PM  
-**Tools:** Calendar, Slack, Gmail, Salesforce, Granola (inference)  
+**Tools:** Calendar, Slack, Gmail, Salesforce, Granola  
 **Reports to:** Sal (Sales Lead) or Head of Sales
+
+**Goals:**
+- **Organizational:** Close $2M in new ARR this quarter; Win 3 enterprise deals; Improve deal close rate from 25% to 35%
+- **Personal:** Close deals faster (from 45 days to 20 days avg); Spend 70% of time talking to customers (not admin); Hit quota and earn bonus
 
 **Daily Pattern:**
 - 4-5 customer calls (demos, discovery, follow-ups)
@@ -130,8 +142,12 @@
 **Full Title:** Executive Assistant to CEO  
 **Timezone:** America/Toronto (with Mike)  
 **Working Hours:** 8:30 AM - 5:30 PM ET (supports Mike's schedule)  
-**Tools:** Calendar, Slack, Gmail, Sheets, Docs, Asana (likely)  
+**Tools:** Calendar, Slack, Gmail, Sheets, Docs, Asana  
 **Reports to:** Mike (directly)
+
+**Goals:**
+- **Organizational:** Enable Mike to focus on strategy (not logistics); Ensure AA deal gets board-ready prep; Make action tracking visible across the org
+- **Personal:** Reduce meeting coordination time from 3 hrs/day to 30 min/day; Have time to think strategically (not just tactical scheduling); Feel trusted to make decisions without always asking Mike
 
 **Daily Pattern:**
 - Coordinate Mike's calendar (10+ meeting requests/day)
@@ -174,10 +190,14 @@
 
 ### 5. Long (CFO)
 **Full Title:** Chief Financial Officer  
-**Timezone:** America/Eastern  
+**Timezone:** America/New_York (ET)  
 **Working Hours:** 9 AM - 5 PM ET  
-**Tools:** Calendar, Slack, Gmail, Sheets, Salesforce (pipelines)  
+**Tools:** Calendar, Slack, Gmail, Sheets, Salesforce  
 **Reports to:** Mike
+
+**Goals:**
+- **Organizational:** Close AA deal with profitable terms; Hit $10M ARR run rate; Maintain 18+ month runway; Prepare quarterly board decks
+- **Personal:** Spend <5 hours on board prep (not 1 day); Have clear financial strategy agreed by Mike + Board; Sleep better (deal/financial stress)
 
 **Daily Pattern:**
 - Deal reviews (American Airlines, customer contracts)
@@ -211,6 +231,33 @@
 5. Budget management (approvals, tracking)
 6. Customer health metrics (churn risk, expansion risk)
 7. KPI reporting (monthly, quarterly)
+
+---
+
+### 6. Alex (Junior Engineer / Newest Team Member)
+**Full Title:** Software Engineer (Backend)  
+**Timezone:** America/Toronto (ET -1)  
+**Working Hours:** 9 AM - 5 PM ET  
+**Tools:** Slack, GitHub, Linear, Granola  
+**Reports to:** Ryan Stephens (VP Eng)
+
+**Goals:**
+- **Organizational:** Ship PAL POC bug fix in 3 days (red-code pace); Reduce customer support feedback loop; Prove capability to senior team
+- **Personal:** Ship something valuable autonomously (with minimal escalation); Feel like I'm moving with the speed of the senior team; Unblock myself without asking 5 questions
+
+**Context:**
+- Started 8 weeks ago
+- Doesn't have full context on company priorities
+- Works on PAL (Piper Advanced Listening) customer POC
+- Needs leverage from senior team's knowledge (context, patterns, priorities)
+- Should be able to ship customer fixes at same velocity as a 5-year engineer would
+
+**Daily Pattern:**
+- Receives customer bug report (Slack → support ticket)
+- Needs to understand: Is this critical? What's the context? Should I fix or escalate?
+- Implements fix
+- Tests with customer
+- Deploys + validates
 
 ---
 

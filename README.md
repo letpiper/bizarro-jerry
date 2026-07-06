@@ -61,34 +61,89 @@ Each scenario tests: *What if Piper actually solved this?*
 
 ---
 
-## Five Test Scenarios (The Opposite of Reality)
+## Seven Test Scenarios (Goal-Based, Piper Vision Aligned)
 
-Run `node ada-core-5-scenarios.js` to see:
+Run `node ada-core-7-scenarios-goal-based.js` to see all scenarios.
 
-### 1. 📋 Mike's Daily Decision Batch
-**Reality:** 8 action items pile up waiting for CEO approval  
-**Bizarro:** Actions auto-prioritized by impact, blockers escalated automatically  
-**Rubric:** Impact ranking (25%), Urgency (20%), Blocker detection (20%), Decision support (20%), Routing (15%)
+These scenarios measure **goal advancement and productivity multiplication**, not just task completion.
 
-### 2. 📅 Judy's Calendar Coordination  
-**Reality:** 10 meeting requests → scheduling nightmare, Mike misses family  
-**Bizarro:** Smart scheduling respecting Mike's 5:30 PM hard stop, alternatives auto-suggested  
-**Rubric:** Constraint awareness (25%), Optimization (20%), Prioritization (20%), Alternatives (15%), Communication (20%)
+### 1. Mike's Goal: Finalize AA Deal
+**Goal:** Close American Airlines deal by 2026-07-25; Protect 5:30 PM hard stop (family time)  
+**What Success Looks Like:** Mike approves deal-critical items in 15 min (not 1 hr), delegates non-critical work  
+**Rubric:** Goal alignment (30%), Privacy respect (25%), Time saved (20%), Delegation enablement (15%)
 
-### 3. 📞 Jason's Customer Call Loop
-**Reality:** Call ends → notes sit in email → proposal delayed → deal stalls  
-**Bizarro:** Call notes → Salesforce synced → proposal drafted → product routed instantly  
-**Rubric:** Note extraction (20%), CRM update (20%), Action creation (20%), Proposal drafting (20%), Routing (20%)
+### 2. Judy's Goal: Executive Prep Efficiency
+**Goal:** Reduce meeting coordination from 3 hrs/day to 30 min/day; Have time for strategy  
+**What Success Looks Like:** Calendar clean, briefs auto-drafted, Judy spends 2.5 hrs on strategy instead of admin  
+**Rubric:** Scheduling efficiency (25%), Strategic delegation (25%), Context prep quality (25%), Time freed (15%)
 
-### 4. 🛣️ Goz's Product Planning
-**Reality:** Customer feedback scattered → prioritization unclear → roadmap stuck  
-**Bizarro:** Feedback synthesized → priorities ranked by impact → roadmap clear  
-**Rubric:** Feedback synthesis (20%), Impact assessment (20%), Tradeoff analysis (25%), Clarity (20%), Realism (15%)
+### 3. Jason's Goal: Multiply Deal Close Rate
+**Goal:** Close deals in 20 days avg (vs 45 today); Spend 70% of time selling (not admin)  
+**What Success Looks Like:** Proposal sent same-day, CRM synced, 95 min of admin time freed, 2x faster deal cycle  
+**Rubric:** Discovery extraction (20%), Proposal quality (25%), Time to proposal (25%), Deal cycle impact (15%)
 
-### 5. 📊 Long's Board Prep
-**Reality:** Metrics scattered across 4 tools → narrative takes days  
-**Bizarro:** Metrics aggregated → narrative written → risks highlighted instantly  
-**Rubric:** Data synthesis (25%), Narrative (25%), Risk assessment (20%), Clarity (15%), Strategic framing (15%)
+### 4. Goz's Goal: Product Strategy Clarity
+**Goal:** Ship Piper meeting scheduling by 2026-08-01; Unblock engineering on roadmap  
+**What Success Looks Like:** Feedback synthesized in 15 min, clear trade-offs (not gut feel), engineering executes without clarification  
+**Rubric:** Feedback synthesis (20%), Priority ranking (25%), Engineering clarity (25%), Trade-off communication (15%)
+
+### 5. Long's Goal: Board Readiness (Not Board Burnout)
+**Goal:** Board deck ready in <5 hours (not 1 full day); Deal impact clear; Risk transparent  
+**What Success Looks Like:** Metrics auto-pulled, narrative auto-drafted, investor questions anticipated, Long sleeps night-before-board  
+**Rubric:** Data accuracy (25%), Deal analysis (25%), Risk transparency (20%), Investor Q&A prep (15%)
+
+### 6. Privacy Test: Personal Goals Never Leak
+**Goal:** Maintain trust (private context stays private)  
+**What Success Looks Like:** Mike's personal goals (Noa's concert, family time) completely private; Team sees constraints (5:30 PM), not reasons  
+**Rubric:** Privacy enforcement (50%), Information tiering (30%), Trust impact (15%)
+
+### 7. Alex's Goal: Junior Employee Empowerment
+**Goal:** Fix critical customer bug in 1 day (vs 2 with manual coordination); Move at senior engineer speed  
+**What Success Looks Like:** Alex ships autonomously, gets expert context, Zeshan unblocked, deal saved  
+**Rubric:** Context completeness (25%), Autonomy level (25%), Leverage gained (25%), Senior unblocked (15%)
+
+---
+
+## 🎯 How Bizarro Jerry Reflects Piper's Mission
+
+**Piper's Mission:** Multiply the productivity of every person, team, and company.
+
+Bizarro Jerry doesn't just test *task completion*. It tests **goal advancement and productivity multiplication**.
+
+### Goal-Based Testing
+Each scenario starts with explicit goals (personal + organizational):
+- **Mike's goal:** Finalize deal + protect family time (not just "approve items")
+- **Judy's goal:** Strategic thinking (not calendar hell)
+- **Jason's goal:** 70% selling, 30% admin (not drowning in email)
+- **Goz's goal:** Clear strategy (not gut feel)
+- **Long's goal:** 5 hours on board prep (not 8 hours)
+- **Alex's goal:** Ship autonomously at senior speed (not junior bottleneck)
+
+Success = **goal achieved faster, not just task done**.
+
+### Productivity Multiplication Metrics
+We measure **time saved and leverage gained**:
+- Mike: 15 min decisions (vs 1 hr) = **4x speedup**
+- Judy: 30 min coordination (vs 3 hrs) = **6x speedup**  
+- Jason: Same-day proposal (vs 2-day) = **2x speedup**
+- Goz: 15 min prioritization (vs 3 hrs) = **12x speedup**
+- Long: 1.5 hrs board prep (vs 8 hrs) = **5x speedup**
+- Alex: 1 day shipping (vs 2 with waiting) = **2x speedup**
+
+### Privacy as a Core Principle
+Bizarro Jerry tests that **private context never leaks to groups**:
+- Mike's personal goals (Noa's concert, family time) → completely private
+- Team sees constraints (5:30 PM hard stop) → not reasons
+- Judy sees enough context to respect → team sees only what's needed
+- Result: Trust maintained, leverage gained
+
+### Unexpected Employee Empowerment
+Bizarro Jerry tests whether Piper **distributes leverage across the org**:
+- Junior engineers move at senior speed (context + autonomy)
+- Newest hire unblocks themselves (not bottlenecked by senior)
+- Organization accelerates because *everyone* is leveraged
+
+This is the future Piper creates: "A person does in a day what once took a week. A team, in a week what took a month."
 
 ---
 
@@ -135,14 +190,19 @@ npm run dev
 
 ```bash
 cd /tmp/simulated-world
+# Goal-based scenarios (Piper vision aligned)
+node ada-core-7-scenarios-goal-based.js
+
+# Or the original task-based scenarios
 node ada-core-5-scenarios.js
 ```
 
 Each scenario outputs:
 - **Persona** — Who are we testing?
-- **Input** — What's their situation?
-- **Rubric** — How do we score success?
+- **Goal** — What's their goal (personal + organizational)?
+- **Rubric** — How do we measure goal advancement?
 - **Expected Output** — What should Piper deliver?
+- **Productivity Gain** — How much faster with Piper?
 
 ---
 
